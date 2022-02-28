@@ -235,21 +235,36 @@ let dishes = [
 //6a. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
 
-let cuisineTypes = dishes.map(function(el){
-    return el.cuisine
-})
+// let cuisineTypes = dishes.map(function(el){
+//     return el.cuisine
+// })
 
-console.log(cuisineTypes)
+// console.log(cuisineTypes)
  
 
 // BONUS: (come back to this after finishing all)
 //6b. Use the filter method to eliminate duplicates, leaving only distinct values in the array
 
+
+
+
 //7. Create a function that will append the cuisine type to the start of the dish's name. Ie, "Italian Pizza"
 //Map 
 
+
+// let cuisineTypes = dishes.map(function(el){
+//     return el.cuisine +' '+ el.name
+// })
+
+// console.log(cuisineTypes)
+
+
+
 //8. Create a function that will append the cuisine type to the start of the dish's name. Then, return only the Vegetarian dish objects. So this function should return objects 11-13 with their names changed to "Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"
 //Map, Filter
+
+
+
 
 
 //BONUS
