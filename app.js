@@ -245,15 +245,15 @@ let dishes = [
 // BONUS: (come back to this after finishing all)
 //6b. Use the filter method to eliminate duplicates, leaving only distinct values in the array
 
-let cuisineTypes = dishes.map(function(el){
-    return el.cuisine
-});
+// let cuisineTypes = dishes.map(function(el){
+//     return el.cuisine
+// });
 
-let filter = cuisineTypes.filter(function(c, index){
-    return cuisineTypes.indexOf(c) === index;
-});
+// let filter = cuisineTypes.filter(function(c, index){
+//     return cuisineTypes.indexOf(c) === index;
+// });
 
-console.log(filter)
+// console.log(filter)
 
 
 //7. Create a function that will append the cuisine type to the start of the dish's name. Ie, "Italian Pizza"
@@ -270,8 +270,6 @@ console.log(filter)
 
 //8. Create a function that will append the cuisine type to the start of the dish's name. Then, return only the Vegetarian dish objects. So this function should return objects 11-13 with their names changed to "Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"
 //Map, Filter
-
-
 
 
 // let cuisineTypes = dishes.map(function(el){
@@ -298,8 +296,20 @@ console.log(filter)
 
 
 
+
+
 //10. Create a function that will return the total serving count of all dishes.
 //Must use Reduce, not a loop.
+
+  
+
+    let sum = dishes.reduce(function(total, el){
+        return total + el;
+    });
+
+    console.log (sum)
+  
+
 
 //11. Create a function that will return an array of any objects that do not share a cuisine type with any other objects.
 
