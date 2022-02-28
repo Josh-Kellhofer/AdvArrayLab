@@ -200,28 +200,47 @@ let dishes = [
 //5. Create a function that will return dishes whose ingredients array is "tomato" and "cheese".
 //Filter
 
-function ProblemFive(){
-    let results = dishes.filter(function(el){
-        if(el.ingredients[0]=== "tomato" && el.ingredients[1]=== "cheese"){
-            return true;
-        }
-        else {
-            return false;
-        }})
+// function ProblemFive(){
+//     let results = dishes.filter(function(el){
+//         if(el.ingredients[0]=== "tomato" && el.ingredients[1]=== "cheese"){
+//             return true;
+//         }
+//         else {
+//             return false;
+//         }})
 
-            return results;
-        }
+//             return results;
+//         }
 
-        let tomatoCheese = ProblemFive();
-        console.log(tomatoCheese)
+//         let tomatoCheese = ProblemFive();
+//         console.log(tomatoCheese)
 
+        // OTHER METHOD (BETTER)
+
+// function ProblemFive(){
+//     let results = dishes.filter(function(el){
+//         if(el.ingredients.includes("cheese", "tomato")){
+//             return true;
+//          }
+//         else {
+//             return false;
+//          }})
+        
+//              return results;
+//         }
+        
+//         let tomatoCheese = ProblemFive();
+//         console.log(tomatoCheese)
 
 //6a. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
 
-function ProblemSix(){
-    
-}
+let cuisineTypes = dishes.map(function(el){
+    return el.cuisine
+})
+
+console.log(cuisineTypes)
+ 
 
 // BONUS: (come back to this after finishing all)
 //6b. Use the filter method to eliminate duplicates, leaving only distinct values in the array
