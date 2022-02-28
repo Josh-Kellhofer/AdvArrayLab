@@ -113,7 +113,7 @@ let dishes = [
 //             return false;
 //         }})
 
-    //Debug tip: Place a Breakpoint on the return AFTER the filter, then hover over "results" to see results of filter without having to step through the whole thing!
+//     // Debug tip: Place a Breakpoint on the return AFTER the filter, then hover over "results" to see results of filter without having to step through the whole thing!
 
 //     return results;
 // }
@@ -127,13 +127,12 @@ let dishes = [
 //Filter
 function ProblemOne(){
       let results = dishes.filter(function(el){
-          if(el.cuisine === "vegetarian"){
+          if(el.cuisine === "Vegetarian"){
               return true;
           }
       else{
           return false;
-      }
-    })
+      }})
     
     return results;
     }
