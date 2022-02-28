@@ -219,7 +219,7 @@ let dishes = [
 
 // function ProblemFive(){
 //     let results = dishes.filter(function(el){
-//         if(el.ingredients.includes("cheese", "tomato")){
+//         if(el.ingredients.includes("cheese") && el.ingredients.includes ("tomato")){
 //             return true;
 //          }
 //         else {
@@ -245,7 +245,15 @@ let dishes = [
 // BONUS: (come back to this after finishing all)
 //6b. Use the filter method to eliminate duplicates, leaving only distinct values in the array
 
+let cuisineTypes = dishes.map(function(el){
+    return el.cuisine
+});
 
+let filter = cuisineTypes.filter(function(c, index){
+    return cuisineTypes.indexOf(c) === index;
+});
+
+console.log(filter)
 
 
 //7. Create a function that will append the cuisine type to the start of the dish's name. Ie, "Italian Pizza"
@@ -263,21 +271,22 @@ let dishes = [
 //8. Create a function that will append the cuisine type to the start of the dish's name. Then, return only the Vegetarian dish objects. So this function should return objects 11-13 with their names changed to "Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"
 //Map, Filter
 
-let cuisineTypes = dishes.map(function(el){
-    return el.cuisine +' '+ el.name
-});
 
-let filterVegetarian = cuisineTypes.filter(function(el){
-    if(el.includes("Vegetarian")){
-        return true;
-    }
-    else{
-        return false;
-    }});
 
-console.log(filterVegetarian)
 
-// console.log(cuisineTypes.cuisine.includes("Vegetarian"))
+// let cuisineTypes = dishes.map(function(el){
+//     return el.cuisine +' '+ el.name
+// });
+
+// let filterVegetarian = cuisineTypes.filter(function(el){
+//     if(el.includes("Vegetarian")){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }});
+
+// console.log(filterVegetarian)
 
 
 
@@ -285,6 +294,9 @@ console.log(filterVegetarian)
 //9. Create a function that will return dishes whose ingredients array INCLUDES "chickpea".
 //Hint: You do not want to check the array's indexes to find out what the array INCLUDES.
 //Filter
+
+
+
 
 //10. Create a function that will return the total serving count of all dishes.
 //Must use Reduce, not a loop.
