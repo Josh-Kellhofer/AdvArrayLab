@@ -125,33 +125,82 @@ let dishes = [
 
 //1. Create a function that will return all dishes with the cuisine type of "vegetarian"
 //Filter
-function ProblemOne(){
-      let results = dishes.filter(function(el){
-          if(el.cuisine === "Vegetarian"){
-              return true;
-          }
-      else{
-          return false;
-      }})
+// function ProblemOne(){
+//       let results = dishes.filter(function(el){
+//           if(el.cuisine === "Vegetarian"){
+//               return true;
+//           }
+//       else{
+//           return false;
+//       }})
     
-    return results;
-    }
+//     return results;
+//     }
     
-    let vegetarianFood = ProblemOne();
-    console.log("Vegetarian Foods: ", vegetarianFood)
+//     let vegetarianFood = ProblemOne();
+//     console.log("Vegetarian Foods: ", vegetarianFood)
     
 
 //2. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
 //Filter
 
+// function ProblemTwo(){
+//     let results = dishes.filter(function(el){
+//         if(el.cuisine === "Italian" && el.servings > 5){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }})
+
+          
+//             return results;
+//         }
+
+//         let italianFood = ProblemTwo();
+//         console.log("Dishes that are Italian and greater than 5 serving sizes: ", italianFood)
+
+
 //3. Create a function that will return only dishes whose serving id number matches their serving count.
 //Filter
+
+// function ProblemThree(){
+//     let results = dishes.filter(function(el){
+//         if(el.id === el.servings){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }})
+
+//             return results;
+// }
+
+//         let matches = ProblemThree();
+//         console.log('Dishes whose serving id matches their serving count: ', matches)
 
 //4. Create a function that will return only dishes whose serving count is even.
 //Filter
 
+// function ProblemFour(){
+//     let results = dishes.filter(function(el){
+//         if(el.servings % 2 === 0){
+//             return true;
+//         } 
+//         else {
+//             return false;
+//         }})
+
+//             return results;
+//         }
+
+//         let even = ProblemFour();
+//         console.log(even)
+
 //5. Create a function that will return dishes whose ingredients array is "tomato" and "cheese".
 //Filter
+
+
 
 //6a. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
